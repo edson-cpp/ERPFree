@@ -29,3 +29,8 @@
 /ERPFree/obj/project.assets.json
 /ERPFree/obj/project.nuget.cache
 /Support/pt-BR.xml
+/.vs/ERPFree/FileContentIndex/*.vsidx
+/.vs/ERPFree/FileContentIndex/39d0579f-68de-42cc-8877-65cbeb0b980f.vsidx
+/ERPFree/obj/Debug/net6.0-windows/ERPFree.Properties.Resources.resources
+/ERPFree/obj/Debug/net6.0-windows/ERPFree.frmClients.resources
+/ERPFree/obj/Debug/net6.0-windows/TempPE/Properties.Resources.Designer.cs.dll

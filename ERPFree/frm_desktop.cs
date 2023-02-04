@@ -11,5 +11,11 @@ namespace ERPFree
         {
 
         }
+
+        private void mniClients_Click(object sender, EventArgs e)
+        {
+            frmClients client = new frmClients();
+            client.ShowDialog();
+        }
     }
 }

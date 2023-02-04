@@ -63,10 +63,7 @@
             this.mniBillsToPay = new System.Windows.Forms.ToolStripMenuItem();
             this.mniLaunchBTP = new System.Windows.Forms.ToolStripMenuItem();
             this.mniGoDownBTP = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniReports = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniTools = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.mniSales = new System.Windows.Forms.ToolStripMenuItem();
             this.mniBoxFront = new System.Windows.Forms.ToolStripMenuItem();
             this.mniSalesControl = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,12 +75,12 @@
             this.mniPurchasing = new System.Windows.Forms.ToolStripMenuItem();
             this.mniProductEntry = new System.Windows.Forms.ToolStripMenuItem();
             this.mniPurchasingControl = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.mniReturnsAndExchanges = new System.Windows.Forms.ToolStripMenuItem();
             this.mniReturnsAndExchangesFromClients = new System.Windows.Forms.ToolStripMenuItem();
             this.mniReturnsAndExchangesToSuppliers = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.mniCashFlow = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniReports = new System.Windows.Forms.ToolStripMenuItem();
             this.mniRecords = new System.Windows.Forms.ToolStripMenuItem();
             this.mniProductsReports = new System.Windows.Forms.ToolStripMenuItem();
             this.mniClientsReports = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,11 +91,14 @@
             this.mniSalesReports = new System.Windows.Forms.ToolStripMenuItem();
             this.mniPurchasingReports = new System.Windows.Forms.ToolStripMenuItem();
             this.mniReturnsAndExchangesFromClientsReports = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniTools = new System.Windows.Forms.ToolStripMenuItem();
             this.mniGlobalSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.mniLocalSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.mniBackup = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniWindow = new System.Windows.Forms.ToolStripMenuItem();
             this.mniCascading = new System.Windows.Forms.ToolStripMenuItem();
             this.mniCloseAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mniAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.mniContent = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuDesktop.SuspendLayout();
@@ -146,6 +146,7 @@
             this.mniClients.Name = "mniClients";
             this.mniClients.Size = new System.Drawing.Size(193, 22);
             this.mniClients.Text = "&Clientes";
+            this.mniClients.Click += new System.EventHandler(this.mniClients_Click);
             // 
             // mniSuppliers
             // 
@@ -357,51 +358,19 @@
             // mniLaunchBTP
             // 
             this.mniLaunchBTP.Name = "mniLaunchBTP";
-            this.mniLaunchBTP.Size = new System.Drawing.Size(180, 22);
+            this.mniLaunchBTP.Size = new System.Drawing.Size(109, 22);
             this.mniLaunchBTP.Text = "&Lançar";
             // 
             // mniGoDownBTP
             // 
             this.mniGoDownBTP.Name = "mniGoDownBTP";
-            this.mniGoDownBTP.Size = new System.Drawing.Size(180, 22);
+            this.mniGoDownBTP.Size = new System.Drawing.Size(109, 22);
             this.mniGoDownBTP.Text = "&Baixar";
             // 
-            // mniReports
+            // toolStripSeparator6
             // 
-            this.mniReports.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniRecords,
-            this.mniActivitiesReport});
-            this.mniReports.Name = "mniReports";
-            this.mniReports.Size = new System.Drawing.Size(71, 20);
-            this.mniReports.Text = "&Relatórios";
-            // 
-            // mniTools
-            // 
-            this.mniTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniGlobalSettings,
-            this.mniLocalSettings,
-            this.mniBackup});
-            this.mniTools.Name = "mniTools";
-            this.mniTools.Size = new System.Drawing.Size(84, 20);
-            this.mniTools.Text = "&Ferramentas";
-            // 
-            // mniWindow
-            // 
-            this.mniWindow.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniCascading,
-            this.mniCloseAll});
-            this.mniWindow.Name = "mniWindow";
-            this.mniWindow.Size = new System.Drawing.Size(51, 20);
-            this.mniWindow.Text = "&Janela";
-            // 
-            // mniHelp
-            // 
-            this.mniHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniAbout,
-            this.mniContent});
-            this.mniHelp.Name = "mniHelp";
-            this.mniHelp.Size = new System.Drawing.Size(50, 20);
-            this.mniHelp.Text = "&Ajuda";
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
             // 
             // mniSales
             // 
@@ -478,11 +447,6 @@
             this.mniPurchasingControl.Size = new System.Drawing.Size(187, 22);
             this.mniPurchasingControl.Text = "&Controle de Compras";
             // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
-            // 
             // mniReturnsAndExchanges
             // 
             this.mniReturnsAndExchanges.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -515,25 +479,34 @@
             this.mniCashFlow.Size = new System.Drawing.Size(180, 22);
             this.mniCashFlow.Text = "&Fluxo de Caixa";
             // 
+            // mniReports
+            // 
+            this.mniReports.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniRecords,
+            this.mniActivitiesReport});
+            this.mniReports.Name = "mniReports";
+            this.mniReports.Size = new System.Drawing.Size(71, 20);
+            this.mniReports.Text = "&Relatórios";
+            // 
             // mniRecords
             // 
             this.mniRecords.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mniProductsReports,
             this.mniClientsReports});
             this.mniRecords.Name = "mniRecords";
-            this.mniRecords.Size = new System.Drawing.Size(180, 22);
+            this.mniRecords.Size = new System.Drawing.Size(129, 22);
             this.mniRecords.Text = "&Cadastros";
             // 
             // mniProductsReports
             // 
             this.mniProductsReports.Name = "mniProductsReports";
-            this.mniProductsReports.Size = new System.Drawing.Size(180, 22);
+            this.mniProductsReports.Size = new System.Drawing.Size(122, 22);
             this.mniProductsReports.Text = "&Produtos";
             // 
             // mniClientsReports
             // 
             this.mniClientsReports.Name = "mniClientsReports";
-            this.mniClientsReports.Size = new System.Drawing.Size(180, 22);
+            this.mniClientsReports.Size = new System.Drawing.Size(122, 22);
             this.mniClientsReports.Text = "&Clientes";
             // 
             // mniActivitiesReport
@@ -546,7 +519,7 @@
             this.mniPurchasingReports,
             this.mniReturnsAndExchangesFromClientsReports});
             this.mniActivitiesReport.Name = "mniActivitiesReport";
-            this.mniActivitiesReport.Size = new System.Drawing.Size(180, 22);
+            this.mniActivitiesReport.Size = new System.Drawing.Size(129, 22);
             this.mniActivitiesReport.Text = "&Atividades";
             // 
             // mniBillsToReceiveReports
@@ -584,6 +557,16 @@
             this.mniReturnsAndExchangesFromClientsReports.Size = new System.Drawing.Size(196, 22);
             this.mniReturnsAndExchangesFromClientsReports.Text = "&Devoluções de Clientes";
             // 
+            // mniTools
+            // 
+            this.mniTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniGlobalSettings,
+            this.mniLocalSettings,
+            this.mniBackup});
+            this.mniTools.Name = "mniTools";
+            this.mniTools.Size = new System.Drawing.Size(84, 20);
+            this.mniTools.Text = "&Ferramentas";
+            // 
             // mniGlobalSettings
             // 
             this.mniGlobalSettings.Name = "mniGlobalSettings";
@@ -602,28 +585,46 @@
             this.mniBackup.Size = new System.Drawing.Size(193, 22);
             this.mniBackup.Text = "&Cópia de Segurança";
             // 
+            // mniWindow
+            // 
+            this.mniWindow.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniCascading,
+            this.mniCloseAll});
+            this.mniWindow.Name = "mniWindow";
+            this.mniWindow.Size = new System.Drawing.Size(51, 20);
+            this.mniWindow.Text = "&Janela";
+            // 
             // mniCascading
             // 
             this.mniCascading.Name = "mniCascading";
-            this.mniCascading.Size = new System.Drawing.Size(180, 22);
+            this.mniCascading.Size = new System.Drawing.Size(142, 22);
             this.mniCascading.Text = "Em &Cascata";
             // 
             // mniCloseAll
             // 
             this.mniCloseAll.Name = "mniCloseAll";
-            this.mniCloseAll.Size = new System.Drawing.Size(180, 22);
+            this.mniCloseAll.Size = new System.Drawing.Size(142, 22);
             this.mniCloseAll.Text = "&Fechar Todas";
+            // 
+            // mniHelp
+            // 
+            this.mniHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniAbout,
+            this.mniContent});
+            this.mniHelp.Name = "mniHelp";
+            this.mniHelp.Size = new System.Drawing.Size(50, 20);
+            this.mniHelp.Text = "&Ajuda";
             // 
             // mniAbout
             // 
             this.mniAbout.Name = "mniAbout";
-            this.mniAbout.Size = new System.Drawing.Size(180, 22);
+            this.mniAbout.Size = new System.Drawing.Size(127, 22);
             this.mniAbout.Text = "&Sobre";
             // 
             // mniContent
             // 
             this.mniContent.Name = "mniContent";
-            this.mniContent.Size = new System.Drawing.Size(180, 22);
+            this.mniContent.Size = new System.Drawing.Size(127, 22);
             this.mniContent.Text = "&Conteúdo";
             // 
             // frmDesktop
