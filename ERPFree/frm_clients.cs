@@ -16,5 +16,15 @@ namespace ERPFree
         {
             InitializeComponent();
         }
+
+        private void tsClients_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void frmClients_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
